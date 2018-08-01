@@ -1,0 +1,33 @@
+.InputRange-track {
+  background: $InputRange-track-background;
+  border-radius: $InputRange-track-height;
+  display: block;
+  height: $InputRange-track-height;
+  position: relative;
+  transition: $inputRange-track-transition;
+
+  .InputRange.is-disabled & {
+    background: $InputRange-track--is-disabled-background;
+  }
+}
+
+.InputRange-track--container {
+  left: 0;
+  margin-top: -0.5 * $InputRange-track-height;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.InputRange-track--active {
+  background: $InputRange-track--active-background;
+}
+
+.vertical .InputRange-track--container {
+    margin-top: 0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.5 * $InputRange-track-height;
+    height: 100%;
+}
